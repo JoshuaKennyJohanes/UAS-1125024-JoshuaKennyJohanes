@@ -3,14 +3,29 @@
  */
 package uas.joshuakennyjohanes;
 
+import uas.joshuakennyjohanes.models.GObject;
+import uas.joshuakennyjohanes.models.Persegi;
 import uas.joshuakennyjohanes.models.SegiEmpat;
+import uas.joshuakennyjohanes.utils.PrintUtils;
 import uas.joshuakennyjohanes.utils.ScannerUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
 
     public static void main(String[] args) {
         SegiEmpat empat = new SegiEmpat("Segi Empat", 10, 10);
         empat.getKeyValueDetails();
+
+        Persegi Persegi = new Persegi("Ini Persegi", 10);
+
+        List<GObject> listObject = new ArrayList<>();
+        listObject.add(Persegi);
+        listObject.add(empat);
+
+
+        PrintUtils.printGObjectDetail(listObject);
       
 
     }

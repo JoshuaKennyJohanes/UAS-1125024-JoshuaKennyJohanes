@@ -20,7 +20,13 @@ public class Persegi extends Object2D{
 
     @Override
     public String[][] getKeyValueDetails() {
-        // TODO Auto-generated method stub
-        return null;
+        String [][] string = { 
+                            {"Label", getLabel()}, 
+                            {"Luas", String.valueOf(hitungLuas())},
+                            {"Keliling", String.valueOf(hitungKeliling())},
+                            {"Sisi", String.valueOf(sisi)},
+                            {"Tipe", "Persegi"}
+                            };
+        return  string;
     }
 }

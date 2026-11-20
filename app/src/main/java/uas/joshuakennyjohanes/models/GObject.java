@@ -1,6 +1,8 @@
 package uas.joshuakennyjohanes.models;
 
-public abstract class GObject {
+import uas.joshuakennyjohanes.interfaces.KeyValueDetailable;
+
+public abstract class GObject implements KeyValueDetailable{
     private String label;
 
     public void setLabel(String label){

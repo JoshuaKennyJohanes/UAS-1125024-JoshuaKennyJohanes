@@ -8,4 +8,27 @@ public class Lingkaran extends Object2D {
         this.jariJari = jariJari;
     }
 
+    @Override
+    public double hitungKeliling() {
+        return 2 * Math.PI * jariJari;
+    }
+
+    @Override
+    public double hitungLuas() {
+        return  (Math.PI)*(Math.PI) * jariJari; 
+    }
+
+    @Override
+    public String[][] getKeyValueDetails() {
+        String [][] string = { 
+                            {"Label", getLabel()}, 
+                            {"Luas", String.valueOf(hitungLuas())},
+                            {"Keliling", String.valueOf(hitungKeliling())},
+                            {"Jari Jari", String.valueOf(jariJari)},
+                            {"Tipe", "Lingkaran"}
+                            };
+        return  string;
+
+    }
+
 }
