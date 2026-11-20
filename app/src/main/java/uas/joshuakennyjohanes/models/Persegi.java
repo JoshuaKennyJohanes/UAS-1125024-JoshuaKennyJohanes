@@ -29,4 +29,8 @@ public class Persegi extends Object2D{
                             };
         return  string;
     }
+
+    public double getSisi(){
+        return this.sisi;
+    }
 }

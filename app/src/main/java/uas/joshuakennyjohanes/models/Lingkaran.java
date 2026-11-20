@@ -31,4 +31,8 @@ public class Lingkaran extends Object2D {
 
     }
 
+    public double getJariJari(){
+        return this.jariJari;
+    }
+
 }
