@@ -4,7 +4,7 @@ import uas.joshuakennyjohanes.utils.ScannerUtils;
 
 public class OptionView {
     
-    public static int FirstMenu(){
+    public int FirstMenu(){
         System.out.println("1. Tampilkan Semua");
         System.out.println("2. Tambah persegi");
         System.out.println("3. Tambah persegi empat");

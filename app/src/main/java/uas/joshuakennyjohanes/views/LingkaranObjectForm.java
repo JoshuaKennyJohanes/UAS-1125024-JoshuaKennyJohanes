@@ -28,6 +28,7 @@ public class LingkaranObjectForm extends GObjectForm<Lingkaran> {
         values[0] = model.getJariJari();
         return values;
     }
+    
 
 
 }

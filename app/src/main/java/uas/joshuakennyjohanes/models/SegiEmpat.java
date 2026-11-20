@@ -34,4 +34,11 @@ public class SegiEmpat extends Object2D {
         return  string;
     }
 
+    public double getPanjang(){
+        return this.panjang;
+    }
+
+    public double getLebar(){
+        return this.lebar;
+    }
 }

@@ -3,6 +3,7 @@
  */
 package uas.joshuakennyjohanes;
 
+import uas.joshuakennyjohanes.controller.Controller;
 import uas.joshuakennyjohanes.models.GObject;
 import uas.joshuakennyjohanes.models.Persegi;
 import uas.joshuakennyjohanes.models.SegiEmpat;
@@ -15,17 +16,13 @@ import java.util.List;
 public class App {
 
     public static void main(String[] args) {
-        SegiEmpat empat = new SegiEmpat("Segi Empat", 10, 10);
-        empat.getKeyValueDetails();
+        
+        Controller controller = new Controller();
+        boolean app = true;
+        while(app){
+             app = controller.Run();
+        }
 
-        Persegi Persegi = new Persegi("Ini Persegi", 10);
-
-        List<GObject> listObject = new ArrayList<>();
-        listObject.add(Persegi);
-        listObject.add(empat);
-
-
-        PrintUtils.printGObjectDetail(listObject);
       
 
     }
