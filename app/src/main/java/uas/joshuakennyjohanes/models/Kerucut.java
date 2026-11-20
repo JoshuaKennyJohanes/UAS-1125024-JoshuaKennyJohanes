@@ -33,4 +33,12 @@ public class Kerucut extends Object3D {
 
     }
 
+    public double getJariJari(){
+        return this.jariJari;
+    }
+
+    public double getTinggi(){
+        return this.tinggi;
+    }
+
 }

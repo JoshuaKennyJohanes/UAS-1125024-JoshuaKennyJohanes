@@ -1,15 +1,13 @@
 package uas.joshuakennyjohanes.views;
 
 
+import java.util.Scanner;
+
 import uas.joshuakennyjohanes.models.Persegi;
+import uas.joshuakennyjohanes.utils.ScannerUtils;
 
 public class PersegiObjectForm extends GObjectForm<Persegi> {
     
-    private Persegi newPersegi;
-
-    public PersegiObjectForm(){
-
-    }
 
     @Override
     protected String[] getFields() {

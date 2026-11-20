@@ -29,4 +29,8 @@ public class Kubus extends Object3D {
         return  string;
         
     }
+
+    public double getSisi(){
+        return this.sisi;
+    }
 }

@@ -3,6 +3,12 @@ package uas.joshuakennyjohanes.views;
 import uas.joshuakennyjohanes.models.Kubus;
 
 public class KubusObjectForm extends  GObjectForm<Kubus>{
+
+    public KubusObjectForm(){
+        
+    }
+
+
     @Override
     protected String[] getFields() {
         String[] field = new String[1];
@@ -18,8 +24,9 @@ public class KubusObjectForm extends  GObjectForm<Kubus>{
 
     @Override
     protected double[] extractValuesFromModel(Kubus model) {
-        // TODO Auto-generated method stub
-        return null;
+        double[] values = new double[1];
+        values[0] = model.getSisi();
+        return values;
     }
 
 }

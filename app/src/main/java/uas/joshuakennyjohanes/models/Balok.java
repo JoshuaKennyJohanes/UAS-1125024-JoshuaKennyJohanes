@@ -34,4 +34,17 @@ public class Balok extends Object3D{
         return  string;
     }
 
+    
+    public double getPanjang(){
+        return this.panjang;
+    }
+
+    public double getLebar(){
+        return this.lebar;
+   }
+
+   public double getTinggi(){
+    return this.tinggi;
+   }
+
 }
