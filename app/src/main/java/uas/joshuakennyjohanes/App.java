@@ -3,52 +3,15 @@
  */
 package uas.joshuakennyjohanes;
 
-import uas.joshuakennyjohanes.models.DebitCard;
-import uas.joshuakennyjohanes.models.Wallets;
+import uas.joshuakennyjohanes.models.SegiEmpat;
 import uas.joshuakennyjohanes.utils.ScannerUtils;
 
 public class App {
 
     public static void main(String[] args) {
-        // implementasi
-        Wallets dompet = new Wallets("Joshua", 1000000);
-        DebitCard debit = new DebitCard("12345", 1000000, "12345");
-
-        boolean status = true;
-        while (status) {
-            System.out.println("Masukan Jumlah Yang dibayar: ");
-            int jumlah = ScannerUtils.readInt();
-
-            System.out.println("Pilih metode Pembayaran: ");
-            System.out.println("1. Cash");
-            System.out.println("2. Debit");
-            int pilihan = ScannerUtils.readInt();
-
-            switch (pilihan) {
-                case 1:
-
-                    if (dompet.validate(jumlah)) {
-                        dompet.pay(jumlah);
-                        System.out.println("Pembayaran Berhasil, sisa wallet: " + dompet.getCashValue());
-                    }
-
-                    break;
-
-                case 2:
-                    System.out.println("Masukan PIN: ");
-                    String pin = ScannerUtils.readLine();
-                    if (pin.equals(debit.getPin())) {
-                        if (debit.validate(jumlah)) {
-                            debit.pay(jumlah);
-                            System.out.println("Pembayaran Berhasil, sisa debit: " + debit.getBalance());
-                        }
-                    }
-                    break;
-                default:
-                    throw new AssertionError();
-            }
-
-        }
+        SegiEmpat empat = new SegiEmpat("Segi Empat", 10, 10);
+        empat.getKeyValueDetails();
+      
 
     }
 }
